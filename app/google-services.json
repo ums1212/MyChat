@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "47761870318",
+    "project_id": "mychat-f42b2",
+    "storage_bucket": "mychat-f42b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47761870318:android:0e8bbb0396d33e12e5d2ff",
+        "android_client_info": {
+          "package_name": "kr.co.lion.addsnapshotlistenertest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGImOis5865PNXynt9mwEU60_RF5taHjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
