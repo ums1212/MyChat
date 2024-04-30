@@ -9,13 +9,13 @@
       "client_info": {
         "mobilesdk_app_id": "1:47761870318:android:0e8bbb0396d33e12e5d2ff",
         "android_client_info": {
-          "package_name": "kr.co.lion.addsnapshotlistenertest"
+          "package_name": "kr.co.lion.mychat"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCGImOis5865PNXynt9mwEU60_RF5taHjo"
+          "current_key": ""
         }
       ],
       "services": {
