@@ -55,9 +55,4 @@ dependencies {
 
     implementation(platform("com.google.firebase:firebase-bom:32.8.1"))
     implementation("com.google.firebase:firebase-analytics")
-
-    implementation("com.google.gms:google-services:4.4.1")
-    implementation("com.google.firebase:firebase-auth:22.3.1")
-    implementation("com.google.firebase:firebase-bom:32.8.1")
-    implementation("com.google.android.gms:play-services-auth:21.1.0")
 }

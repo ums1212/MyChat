@@ -211,5 +211,3 @@ fabric.properties
 !/gradle/wrapper/gradle-wrapper.jar
 
 # End of https://www.toptal.com/developers/gitignore/api/androidstudio,android,kotlin,windows
-app/google-services.json
-app/client_secret_436370899417-hia1ob6ngtk706tvrb18scml8pv3vsjk.apps.googleusercontent.com.json
