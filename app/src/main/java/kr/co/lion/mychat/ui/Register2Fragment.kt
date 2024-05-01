@@ -5,56 +5,63 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kr.co.lion.mychat.R
+import kr.co.lion.mychat.MainActivity
+import kr.co.lion.mychat.databinding.FragmentRegister2Binding
+import kr.co.lion.mychat.utils.FragmentName
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [Register2Fragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class Register2Fragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    lateinit var binding: FragmentRegister2Binding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_register2, container, false)
+        binding = FragmentRegister2Binding.inflate(inflater)
+
+        settingToolbar()
+        settingButton()
+
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Register2Fragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            Register2Fragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+    private fun settingToolbar(){
+        with(binding){
+            toolbarRegister2.apply {
+                setNavigationIcon(com.google.android.material.R.drawable.ic_arrow_back_black_24)
+                setNavigationOnClickListener {
+                    (activity as MainActivity).removeFragment(FragmentName.REGISTER2_FRAGMENT)
                 }
             }
+        }
     }
+
+    private fun settingButton(){
+        with(binding){
+            // 건너뛰기
+            buttonSkip.setOnClickListener {
+                skipRegister2()
+            }
+
+            // 다음 버튼
+            buttonLoginSubmit.setOnClickListener {
+                submitRegister2()
+            }
+        }
+    }
+
+    private fun checkEmpty(): Boolean{
+        return false
+    }
+
+    private fun skipRegister2(){
+        (activity as MainActivity).replaceFragment(FragmentName.REGISTER_COMPLETE_FRAGMENT, true, true, null)
+    }
+
+    private fun submitRegister2(){
+        checkEmpty()
+        (activity as MainActivity).replaceFragment(FragmentName.REGISTER_COMPLETE_FRAGMENT, true, true, null)
+    }
+
 }

@@ -8,7 +8,7 @@
     tools:context=".ui.RegisterFragment" >
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbarRegister2"
+        android:id="@+id/toolbarRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#00FFFFFF"
