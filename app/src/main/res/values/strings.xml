@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MyChat</string>
+    <string name="navi_item1">채팅</string>
+    <string name="navi_item2">마이페이지</string>
 </resources>
